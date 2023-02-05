@@ -1,27 +1,39 @@
-# AngularTestExamples
+#Test writing
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
+One of the inseparable parts of software development is test writing
+We have two ways for testing our app:
+Manual test:
 
-## Development server
+In this type of testing, the developer herself tests the problematic parts of the program according to the principles of its implementation.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+##Automatic test:
 
-## Code scaffolding
+  In this type of testing, developer write methods that test a different part of the apps
+  We have three ways to write automatic tests:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##Unit tests:
 
-## Build
+  Unit testing is a stage of software testing in which the smallest part of a program such as a function or component or module is independently tested by   providing input and making sure that the output is as expected.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The most Important points of unit tests:
 
-## Running unit tests
+1-The test should be very, very simple to run quickly and in a short period of time. (That is, tests should be small so that changes in the code are easier.)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2-Tests should be isolated and independent from each other and have no dependencies.
 
-## Running end-to-end tests
+3-Tests should not depend on the environment and execution time. (The test must always have a specific output in any environment and time.)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+4-The test output must be Pass or Fail and does not require further checks.
 
-## Further help
+##Integration tests:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Test component with its dependencies
+Integration testing is the most important level of testing that focuses on the interaction between components, modules, and objects that work together. Integration testing is actually a level of testing that ensures that different parts of the system interact correctly and that data and information are passed between them correctly. In the integration test, software modules are logically integrated and tested as a group.
+
+##End-to-end tests:
+
+The main purpose of E2E testing is to test the end user experience by simulating a real user scenario and validating the system under test and its components for integrity. At this level, all user actions are simulated from the beginning of entering the system to the last step.
+
+Puppeteer, selenium
+
+
